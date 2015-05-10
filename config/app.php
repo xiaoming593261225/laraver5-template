@@ -135,6 +135,7 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
 
         /*
 		 * Application Service Providers...
@@ -182,6 +183,7 @@ return [
         'Form'      => 'Illuminate\Html\FormFacade',
         'Hash'      => 'Illuminate\Support\Facades\Hash',
         'HTML'      => 'Illuminate\Html\HtmlFacade',
+        'Image' => 'Intervention\Image\Facades\Image',
         'Input'     => 'Illuminate\Support\Facades\Input',
 		'Inspiring' => 'Illuminate\Foundation\Inspiring',
 		'Lang'      => 'Illuminate\Support\Facades\Lang',

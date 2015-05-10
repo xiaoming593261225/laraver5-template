@@ -1,0 +1,82 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: lighter !important;
+}
+
+.header {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu a.menu-link {
+    color: #fff;
+    font-size: 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+
+.menu a.menu-link:hover,
+.menu a.menu-link.active-link
+{
+    color: red;
+    text-decoration: none;
+}
+
+.title {
+    color: #fff;
+    margin: 0
+}
+
+.container {
+  z-index: 1;
+  position: relative
+}
+
+.background {
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+}
+
+.background,
+.background:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.background:after {
+  content: '';
+  background: transparent url(../images/pattern.png) repeat top left;
+  opacity: 0.5;
+}
+
+.thumbnail-container {
+    display: inline-block;
+    overflow: hidden;
+    padding: 140px 50px 50px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: rgba(10,10,10,0.8);
+    height: 100%;
+    display: none;
+}
+
+.thumbnail-container .thumbnail {
+    display: inline-block;
+}
+
+.thumbnail img {
+    width: 100px;
+}

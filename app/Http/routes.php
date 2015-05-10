@@ -11,11 +11,76 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'ClientController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('pogolms', [
+    'as' => 'adminLogin',
+    'uses' => 'Auth\AuthController@adminLogin'
+    ]
+);
+
+Route::post('authenticate', [
+        'as' => 'authenticate',
+        'uses' => 'Auth\AuthController@authenticate'
+    ]
+);
+
+Route::group([
+    'prefix' => 'admin/',
+    'namespace' => 'Admin'
+], function() {
+    Route::get('/', [
+        'as' => 'adminHome',
+        'uses' => 'AdminController@index'
+    ]);
+    /*
+     * ===========================================
+     * IMAGE RELATED LINKS
+     * ===========================================
+     */
+    Route::get('/images', [
+        'as' => 'adminImages',
+        'uses' => 'AdminController@images'
+    ]);
+    Route::post('/images/upload', [
+        'as' => 'adminImagesUpload',
+        'uses' => 'AdminController@uploadImage'
+    ]);
+
+
+    /*
+     * ===========================================
+     * COMMENT RELATED LINKS
+     * ===========================================
+     */
+    Route::get('/comments', [
+        'as' => 'adminComments',
+        'uses' => 'AdminController@comments'
+    ]);
+
+    /*
+     * ===========================================
+     * SECTION RELATED LINKS
+     * ===========================================
+     */
+    Route::get('/sections', [
+        'as' => 'adminSections',
+        'uses' => 'AdminController@sections'
+    ]);
+    Route::post('/sections/add', [
+        'as' => 'adminSectionsAdd',
+        'uses' => 'AdminController@addSection'
+    ]);
+
+    /*
+     * ===========================================
+     * PROFILE RELATED LINKS
+     * ===========================================
+     */
+    Route::get('/profile', [
+        'as' => 'adminProfile',
+        'uses' => 'AdminController@profile'
+    ]);
+});

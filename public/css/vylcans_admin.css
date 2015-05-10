@@ -1,0 +1,46 @@
+.login-form {
+    display: block;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+.upload-thumbnail {
+    display: inline-block;
+    margin-right: 10px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+}
+
+.section-select {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 2px;
+}
+
+.unprocessed-images .panel-body {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.panel-heading {
+    position: relative;
+}
+
+.panel-toogle-control {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
