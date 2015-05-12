@@ -17,6 +17,6 @@ class ClientController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		return view('html5upPrologue.home');
 	}
 }

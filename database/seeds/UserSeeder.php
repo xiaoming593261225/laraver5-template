@@ -1,6 +1,6 @@
 <?php
 
-class UserTableSeeder extends \Illuminate\Database\Seeder {
+class UserSeeder extends \Illuminate\Database\Seeder {
 
     public function run() {
         DB::table('users')->delete();
