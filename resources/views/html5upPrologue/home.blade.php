@@ -9,14 +9,13 @@
         <div class="container">
 
             <header>
-                <h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-                    site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+                <h2 class="alt">Sveicināti!</h2>
                 <p>Ligula scelerisque justo sem accumsan diam quis<br />
                     vitae natoque dictum sollicitudin elementum.</p>
             </header>
 
             <footer>
-                <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+                <a href="#portfolio" class="button scrolly">Portfolio</a>
             </footer>
 
         </div>
@@ -35,49 +34,53 @@
                 Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
                 fusce hendrerit lacus ridiculus.</p>
 
-            <div class="row">
+            <div class="row portfolio-section-container">
                 <div class="4u">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/portrait-bw.jpg" alt="" /></a>
                         <header>
-                            <h3>Ipsum Feugiat</h3>
+                            <h3>Portrets B&W</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/portrait-color.jpg" alt="" /></a>
                         <header>
-                            <h3>Rhoncus Semper</h3>
+                            <h3>Portrets Krāsains</h3>
                         </header>
                     </article>
                 </div>
                 <div class="4u">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/nude.jpg" alt="" /></a>
                         <header>
-                            <h3>Magna Nullam</h3>
+                            <h3>Akts</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/abandonment.jpg" alt="" /></a>
                         <header>
-                            <h3>Natoque Vitae</h3>
+                            <h3>Pamestība</h3>
                         </header>
                     </article>
                 </div>
                 <div class="4u">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/various.jpg" alt="" /></a>
                         <header>
-                            <h3>Dolor Penatibus</h3>
+                            <h3>Dažādi</h3>
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                        <a href="#" class="image fit section-selector"><img src="images/landscape.jpg" alt="" /></a>
                         <header>
                             <h3>Orci Convallis</h3>
                         </header>
                     </article>
                 </div>
+            </div>
+            <div class="row opened-section-container">
+                here shall be images of the section (container will be hidden)
+                <a href="#" class="show-portfolio">Back to portfolio</a>
             </div>
 
         </div>
@@ -91,7 +94,7 @@
                 <h2>About Me</h2>
             </header>
 
-            <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="images/about-me.jpg" alt="" /></a>
 
             <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
                 ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae

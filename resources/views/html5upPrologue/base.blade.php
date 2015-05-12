@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Prologue by HTML5 UP</title>
+    <title>Edgars Vylcāns</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -17,11 +17,13 @@
     <script src="{{ asset('js/html5up-prologue/skel.min.js') }}"></script>
     <script src="{{ asset('js/html5up-prologue/skel-layers.min.js') }}"></script>
     <script src="{{ asset('js/html5up-prologue/init.js') }}"></script>
+    <script src="{{ asset('js/html5up-prologue/vylcans.js') }}"></script>
     <noscript>
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/skel.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/style.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/style-wide.css') }}" />
     </noscript>
+    <link rel="stylesheet" href="{{ asset('css/html5up-prologue/vylcans.css') }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('css/html5up-prologue/ie/v9.css') }}" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('css/html5up-prologue/ie/v8.css') }}" /><![endif]-->
 </head>
@@ -35,8 +37,8 @@
         <!-- Logo -->
         <div id="logo">
             <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-            <h1 id="title">Jane Doe</h1>
-            <p>Hyperspace Engineer</p>
+            <h1 id="title">Edgars Vylcāns</h1>
+            <p>Fotogrāfijas</p>
         </div>
 
         <!-- Nav -->
@@ -55,10 +57,10 @@
 
             -->
             <ul>
-                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon">Intro</span></a></li>
+                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon">Portfolio</span></a></li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon">About Me</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon">Contact</span></a></li>
             </ul>
         </nav>
 
@@ -87,7 +89,7 @@
 
     <!-- Copyright -->
     <ul class="copyright">
-        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>&copy; Edgars Vylcāns, <?= date('Y'); ?>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
 
 </div>

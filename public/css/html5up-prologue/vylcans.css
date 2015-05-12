@@ -1,0 +1,11 @@
+.portfolio-section-container {
+    position: relative;
+}
+
+.opened-section-container {
+    display: none;
+}
+
+.opened-section-container.active {
+    display: block;
+}
