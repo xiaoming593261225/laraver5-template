@@ -40,8 +40,8 @@
       <file leaf-file-name="vylcans.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/html5up-prologue/vylcans.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14106584" vertical-offset="0" max-vertical-offset="702">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.85893416" vertical-offset="10" max-vertical-offset="720">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -904,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/html5up-prologue/vylcans.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14106584" vertical-offset="0" max-vertical-offset="702">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.85893416" vertical-offset="10" max-vertical-offset="720">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding />
         </state>
       </provider>

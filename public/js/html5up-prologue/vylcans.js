@@ -20,15 +20,16 @@ $(function() {
 
     $('.show-portfolio').on('click', function (e) {
         e.preventDefault();
-        $('.opened-section-container').animate({opacity:0}, 1000).addClass('active');
-        $('.portfolio-section-container').css('display', 'block').animate({
-            opacity:1,
-            left: 0
-        },
-            1000,
-            function () {
-                $('.opened-section-container').css('opacity', 1);
-            }
-        );
+        $('.opened-section-container').animate({opacity:0}, 1000, function () {
+            $('.portfolio-section-container').css('display', 'block').animate({
+                    opacity:1,
+                    left: 0
+                },
+                1000,
+                function () {
+                    $('.opened-section-container').removeClass('active').css('opacity', 1);
+                }
+            );
+        });
     });
 });
