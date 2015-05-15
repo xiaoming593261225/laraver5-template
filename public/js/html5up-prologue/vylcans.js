@@ -1,6 +1,9 @@
 $(function() {
     $('.section-selector').on('click', function (e) {
         e.preventDefault();
+
+        var url = $(this).attr('href');
+
         $('.portfolio-section-container').animate(
             {
                 opacity: 0,
@@ -11,8 +14,12 @@ $(function() {
                 $('html,body').animate({
                         scrollTop: $("#portfolio").offset().top},
                     'slow', function () {
-                        $('.portfolio-section-container').css('display', 'none');
-                        $('.opened-section-container').addClass('active');
+                        $.get(url, function (response) {
+                            $('.section-image-container').html(response);
+                            $('.portfolio-section-container').css('display', 'none');
+                            $('.opened-section-container').addClass('active');
+
+                        });
                     });
             }
         );

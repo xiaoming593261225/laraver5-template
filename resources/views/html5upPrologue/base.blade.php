@@ -17,12 +17,14 @@
     <script src="{{ asset('js/html5up-prologue/skel.min.js') }}"></script>
     <script src="{{ asset('js/html5up-prologue/skel-layers.min.js') }}"></script>
     <script src="{{ asset('js/html5up-prologue/init.js') }}"></script>
+    <script src="{{ asset('js/fancybox/source/jquery.fancybox.pack.js') }}"></script>
     <script src="{{ asset('js/html5up-prologue/vylcans.js') }}"></script>
     <noscript>
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/skel.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/style.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/html5up-prologue/style-wide.css') }}" />
     </noscript>
+    <link rel="stylesheet" href="{{ asset('js/fancybox/source/jquery.fancybox.css') }}" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{ asset('css/html5up-prologue/vylcans.css') }}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('css/html5up-prologue/ie/v9.css') }}" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('css/html5up-prologue/ie/v8.css') }}" /><![endif]-->
