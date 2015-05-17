@@ -21,6 +21,11 @@ Route::get('pogolms', [
     ]
 );
 
+Route::get('/sections/{id}/images', [
+    'as' => 'clientSectionImages',
+    'uses' => 'ClientController@getSectionImages'
+]);
+
 Route::post('authenticate', [
         'as' => 'authenticate',
         'uses' => 'Auth\AuthController@authenticate'

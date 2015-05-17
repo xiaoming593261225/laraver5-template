@@ -35,51 +35,20 @@
                 fusce hendrerit lacus ridiculus.</p>
 
             <div class="row portfolio-section-container">
-                <div class="4u">
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/portrait-bw.jpg" alt="" /></a>
-                        <header>
-                            <h3>Portrets B&W</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/portrait-color.jpg" alt="" /></a>
-                        <header>
-                            <h3>Portrets Krāsains</h3>
-                        </header>
-                    </article>
-                </div>
-                <div class="4u">
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/nude.jpg" alt="" /></a>
-                        <header>
-                            <h3>Akts</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/abandonment.jpg" alt="" /></a>
-                        <header>
-                            <h3>Pamestība</h3>
-                        </header>
-                    </article>
-                </div>
-                <div class="4u">
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/various.jpg" alt="" /></a>
-                        <header>
-                            <h3>Dažādi</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit section-selector"><img src="images/landscape.jpg" alt="" /></a>
-                        <header>
-                            <h3>Orci Convallis</h3>
-                        </header>
-                    </article>
-                </div>
+
+                @foreach($sections as $section)
+                    <div class="4u">
+                        <article class="item">
+                            <a href="{{{ route('clientSectionImages', ['id' => $section->id]) }}}" class="image fit section-selector"><img src="images/portrait-bw.jpg" alt="" /></a>
+                            <header>
+                                <h3>{{{ $section->title }}}</h3>
+                            </header>
+                        </article>
+                    </div>
+                @endforeach
             </div>
             <div class="row opened-section-container">
-                here shall be images of the section (container will be hidden)
+                <div class="section-image-container row"></div>
                 <a href="#" class="show-portfolio">Back to portfolio</a>
             </div>
 

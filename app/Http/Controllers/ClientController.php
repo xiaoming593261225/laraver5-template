@@ -1,5 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use Request;
+use App\Models\Section;
+use App\Repositories\SectionRepository;
+
 class ClientController extends Controller {
 
 	/**
@@ -17,6 +21,21 @@ class ClientController extends Controller {
 	 */
 	public function index()
 	{
-		return view('html5upPrologue.home');
+        $sections = SectionRepository::all(true);
+
+		return view('html5upPrologue.home')->with('sections', $sections);
 	}
+
+    public function getSectionImages($id)
+    {
+        $section = Section::find($id);
+
+        if (!$section) {
+            return \Response::make('Section not found', 404);
+        }
+
+        if (Request::ajax()) {
+            return \View::make('html5upPrologue.partial.sectionImages')->with('section', $section);
+        }
+    }
 }
