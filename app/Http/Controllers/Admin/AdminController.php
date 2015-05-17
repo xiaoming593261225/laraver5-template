@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Image;
+use App\Models\Profile;
 use App\Models\Section;
 use App\Repositories\ImageRepository;
 use App\Repositories\SectionRepository;
@@ -126,11 +127,25 @@ class AdminController extends Controller {
 
     public function profile()
     {
-        return view('admin/profile');
+        $profileData = Profile::all();
+
+        return view('admin/profile')->with('profileData', $profileData);
     }
 
     public function saveProfile()
     {
+        $locale = \Input::get('locale');
 
+        $profileEntry = Profile::where('locale', '=', $locale)->first();
+
+        if (!$profileEntry) {
+            $profileEntry = new Profile();
+            $profileEntry->locale = $locale;
+        }
+
+        $profileEntry->content = \Input::get('content');
+        $profileEntry->save();
+
+        return redirect()->route('adminProfile');
     }
 }
