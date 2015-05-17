@@ -83,4 +83,8 @@ Route::group([
         'as' => 'adminProfile',
         'uses' => 'AdminController@profile'
     ]);
+    Route::post('/profile', [
+        'as' => 'adminProfile',
+        'uses' => 'AdminController@saveProfile'
+    ]);
 });

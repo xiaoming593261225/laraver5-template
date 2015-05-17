@@ -128,4 +128,9 @@ class AdminController extends Controller {
     {
         return view('admin/profile');
     }
+
+    public function saveProfile()
+    {
+
+    }
 }
