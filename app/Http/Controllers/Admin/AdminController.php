@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\LocaleHelper;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
 use App\Models\Profile;
@@ -127,9 +128,13 @@ class AdminController extends Controller {
 
     public function profile()
     {
-        $profileData = Profile::all();
+        $profileData = Profile::lists('content', 'locale');
 
-        return view('admin/profile')->with('profileData', $profileData);
+        $locales = LocaleHelper::getNamedLocales();
+
+        return view('admin/profile')
+            ->with('profileData', $profileData)
+            ->with('locales', $locales);
     }
 
     public function saveProfile()
