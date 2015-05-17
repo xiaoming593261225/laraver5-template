@@ -54,6 +54,10 @@ Route::group([
         'uses' => 'AdminController@uploadImage'
     ]);
 
+    Route::post('/images/link-to-section', [
+        'as' => 'adminImagesLinkToSection',
+        'uses' => 'AdminController@linkToSection'
+    ]);
 
     /*
      * ===========================================

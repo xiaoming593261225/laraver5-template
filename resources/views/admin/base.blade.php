@@ -14,6 +14,7 @@
         @yield('content')
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-file.js"><\/script>')</script>
     <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/js/ajax-form.js') }}"></script>
     @yield('javascripts')

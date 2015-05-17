@@ -4,10 +4,10 @@
 
     @include('admin/uploadForm')
 
-    @include('admin/imageSection', ['title' => 'Nepiesaistītie attēli', 'images' => $inactiveImages])
+    @include('admin/imageSection', ['title' => 'Nepiesaistītie attēli', 'images' => $inactiveImages, 'id' => 'unprocessedImages'])
 
     @foreach($sections as $section)
-        @include('admin/imageSection', ['sectionId' => $section->id, 'title' => $section->title, 'images' => $section->images])
+        @include('admin/imageSection', ['sectionId' => $section->id, 'title' => $section->title, 'images' => $section->images, 'id' => 'section_' . $section->id])
     @endforeach
 
 @endsection
@@ -39,7 +39,7 @@
     <!-- The File Upload validation plugin -->
     <script src="{{ asset('/jquery-file-upload/js/jquery.fileupload-validate.js') }}"></script>
 
-    <script src="{{ asset('/js/file-upload.js') }}"></script>
+    <script src="{{ asset('/js/admin.images.js') }}"></script>
 
 @endsection
 

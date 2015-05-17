@@ -44,3 +44,10 @@
     top: 10px;
     font-size: 20px;
 }
+
+.image-with-selector {
+    width: 200px;
+    /* position: relative; */
+    display: inline-block;
+    margin: 0 20px;
+}

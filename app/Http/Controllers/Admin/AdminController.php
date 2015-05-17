@@ -40,7 +40,7 @@ class AdminController extends Controller {
         return view('admin/images')
             ->with([
                 'sections' => $sections,
-                'inactiveImages' => ImageRepository::getInactiveImages()
+                'inactiveImages' => ImageRepository::getImagesWithoutSection()
             ]);
     }
 
@@ -72,6 +72,22 @@ class AdminController extends Controller {
         }
 
         return \Response::json('Some shit happened', 400);
+    }
+
+    public function linkToSection()
+    {
+        $imageId = \Input::get('imageId');
+        $sectionId = \Input::get('sectionId');
+
+        $image = Image::find($imageId);
+        $section = Section::find($sectionId);
+
+        if (!$image or !$section) {
+            return \Response::json('Section or image does not exist');
+        }
+
+        $image->section_id = $sectionId;
+        $image->save();
     }
 
     /*
